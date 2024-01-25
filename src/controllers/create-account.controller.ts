@@ -1,11 +1,4 @@
-import {
-  ConflictException,
-  Body,
-  Controller,
-  HttpCode,
-  Post,
-  UsePipes,
-} from "@nestjs/common";
+import { ConflictException, Body, Controller, HttpCode, Post, UsePipes } from "@nestjs/common";
 import { hash } from "bcryptjs";
 import { ZodValidationPipe } from "@/pipes/zod-validation.pipe";
 import { PrismaService } from "@/prisma/prisma.service";
@@ -37,9 +30,7 @@ export class CreateAccountController {
     });
 
     if (userWithSameEmail) {
-      throw new ConflictException(
-        "User with same e-mail adress already exists.",
-      );
+      throw new ConflictException("User with same e-mail adress already exists.");
     }
 
     const hashedPassword = await hash(password, 8);

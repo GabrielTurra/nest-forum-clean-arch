@@ -19,7 +19,7 @@
   ],
   "rules": {
     "prettier/prettier": ["error", {
-      "printWidth": 80,
+      "printWidth": 100,
       "tabWidth": 2,
       "singleQuote": false,
       "arrowParens": "always",
@@ -27,6 +27,7 @@
       "endOfLine": "auto"
     }],
     "no-useless-constructor": "off",
+    "no-new": "off",
     "indent": [
       "error",
       2
