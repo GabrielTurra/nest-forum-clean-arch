@@ -1,5 +1,5 @@
 import { UniqueEntityID } from "@/core/entities/unique-entity-id";
-import { AnswerQuestionUseCase } from "./answer-questions";
+import { AnswerQuestionUseCase } from "../answers/answer-questions";
 import { InMemoryAnswersRepository } from "@/test/repositories/in-memory-answers-repository";
 import { InMemoryAnswerAttachmentsRepository } from "@/test/repositories/in-memory-answers-attachments-repository";
 

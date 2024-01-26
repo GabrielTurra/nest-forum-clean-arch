@@ -2,7 +2,7 @@ import { InMemoryAnswersRepository } from "@/test/repositories/in-memory-answers
 import { makeAnswer } from "@/test/factories/make-answer";
 import { UniqueEntityID } from "@/core/entities/unique-entity-id";
 import { InMemoryQuestionsRepository } from "@/test/repositories/in-memory-questions-repository";
-import { ChooseBestQuestionAnswerUseCase } from "./choose-best-question-answer";
+import { ChooseBestQuestionAnswerUseCase } from "../questions/choose-best-question-answer";
 import { makeQuestion } from "@/test/factories/make-question";
 import { NotAllowedError } from "@/core/errors/not-allowed-error";
 import { InMemoryQuestionAttachmentsRepository } from "@/test/repositories/in-memory-question-attachments-repository";
